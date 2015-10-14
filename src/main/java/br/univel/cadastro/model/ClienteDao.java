@@ -11,6 +11,10 @@ public interface ClienteDao {
 	
 	public void excluir(Cliente c) throws SQLException;
 	
+	public void AbrirConexao() throws SQLException;
+	
+	public void fecharConexao() throws SQLException;
+	
 	public Cliente buscar(int id);
 	
 	public Cliente buscarPorExemplo(Cliente c);

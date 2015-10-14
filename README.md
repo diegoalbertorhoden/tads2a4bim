@@ -9,3 +9,4 @@
 * Criação do repositório
 * Criação do Projeto
 * Criação do Cliente e DAO.
+* Baixado o JasperStudio

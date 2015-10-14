@@ -1,6 +1,7 @@
 package br.univel.cadastro.model;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
@@ -71,6 +72,22 @@ public class ClienteDaoH2Impl implements ClienteDao {
 	public List<Cliente> listar() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public void AbrirConexao() throws SQLException {
+
+		String url = "jdbc:h2:./aulah2";
+		String user = "sa";
+		String pass = "sa";
+		con = DriverManager.getConnection(url, user, pass);
+		
+	}
+
+	@Override
+	public void fecharConexao() throws SQLException {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
